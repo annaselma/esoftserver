@@ -21,7 +21,7 @@ import org.hibernate.annotations.Fetch;
 @Entity
 @Table(name="Person")
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
-public class Person implements Serializable {
+public  abstract class Person implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	@Id
